@@ -43,7 +43,8 @@ app.use(session({
 }))
 
 //mongodb connection
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect( 'mongodb+srv://khair:sarah@khair.hv3qrke.mongodb.net/Khair'
+)
     .then((result) => {
         console.log("Connected to Khair database...");
         app.listen(process.env.port, 'localhost', () => {
