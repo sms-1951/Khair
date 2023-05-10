@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%-include("./partials/head.ejs")%>
+    <link rel="stylesheet" href="CSS/card.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"> </script>
+        <header>
+            <nav class="navbar navbar-expand-md" id="khairNav">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                  <img src="images/logo.png" alt="logo" style="height:75px; width: 150px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#khairNav">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="khairNav">
+                  <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Us</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="signuplink" class="sign-up-btn nav-link" href="/signup">Sign Up</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+    <div class="card" id="contact">
+        <h1 class="card-title">Contact Us</h1>
+        <hr id="divider">
+        <h2>One of our representatives will get back to you soon!</h2>
+        <form id="contactform" method="POST" action="/contact" class="p-4">
+            <div class="mb-3 mt-3">
+                <label for="reason" class="form-label">Reason for contact?</label>
+                <select class="form-select" name="reason" required>
+                    <option value="Inquiry">Inquiry</option>
+                    <option value="Complaint">Complaint</option>
+                    <option value="Suggestion">Suggestion</option>
+                    <option value="Reporting an Issue">Reporting an Issue</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="mb-3 mt-3 col">
+                    <label for="name" style="margin-left: 10px;">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Sarah" name="name" required>
+                </div>
+                <div class="mb-3 mt-3 col-6">
+                    <label for="email" style="margin-left: 10px;">Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="abc@gmail.com" name="email" required>
+                    <span id="emailError" class="text-danger"></span><br>
+                </div>
+            </div>
+            <div class="mb-3 mt-3">
+                <label style="margin-left: 5px;" for="message">Message</label>
+                <textarea rows="4" class="form-control" id="message" placeholder="What's on your mind?" name="message"
+                    required></textarea>
+                
+            </div>
+            <button id="submitbtn" type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+    <%- include("./partials/footer.ejs")%>
+    
+    <script>
+        const form = document.querySelector("#contactform");
+        form.addEventListener("submit", validateForm);
+
+        function validateForm(event) {
+            let email = document.querySelector('#email');
+            let emailError = document.querySelector('#emailError');
+            const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            // Clear red border and error message when user attempts again
+            email.addEventListener('input', () => {
+                email.style.border = '';
+                emailError.textContent = '';
+            });
+            if (!emailPattern.test(email.value)) {
+                emailError.innerHTML = 'Please enter a valid email address.';
+                email.style.border = "2px solid red";
+                event.preventDefault();
+                return false;
+            } else {
+                return true;
+            }
+        };
+    </script>
+</body>
+
+</html>

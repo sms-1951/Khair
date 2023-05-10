@@ -1,0 +1,68 @@
+/*css rules relevant to home page*/
+.donatebutton {
+  border: none;
+  border-radius: 12px;
+  background-color: #79915C;
+  height: 50px;
+  width: 150px;
+  margin-top: 50px;
+  margin-right: 70px;
+  margin-left: 20px;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-family: sans-serif;
+
+}
+#charitiesbutton {
+  color: #79915C;
+}
+
+#gallery {
+  margin-bottom: 20px;
+}
+
+#gallery .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 70vh;
+}
+
+#history .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 50vh;
+  width: 100%;
+}
+i {
+  color: #79915C;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+
+#vision {
+  background-color: #D9EAD3;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  text-align: justify;
+  line-height: 2;
+}
+
+div h2 {
+  color: #79915C;
+  font-style: oblique;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.row {
+  margin-top: 2rem;
+}
+
+#ourhistory {
+  margin-top: 50px;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%-include("./partials/head.ejs")%>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="CSS/charities.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"> </script>
+    <%-include("./partials/nav.ejs")%>
+        <section id="charity-content">
+            <div class="container-fluid" id="imageContainer">
+                <img src="images/charity.jpg" class="img-fluid" alt="Picture of a woman donating."
+                    style="margin-top: 20px;  opacity: 0.85;">
+                <div id="pagetitle" class="bottom-left">
+                    <h1 style="font-family: 'Lato', sans-serif; font-weight: bold; font-size: 7vw;">Charities</h1>
+                </div>
+            </div>
+            <br>
+            <section id="charitycards">
+                <div class="card mb-3" style="max-width: 90%; margin: auto;">
+                    <div class="row">
+                        <div class="col-2 align-self-center">
+                            <img class="img-fluid charitylogo" src="images/etaam.png" alt="Etaam Logo">
+                        </div>
+                        <div class="col-10">
+                            <div class="card-body">
+                                <h2 class="card-title">Etaam</h2>
+                                <div style="float: right; margin-left: 10px;">
+                                    <button type="button" class="btn" onclick="location.href= '/donate'" style="background-color: #79915C;
+                            color: white; display: flex;">Donate</button> <br>
+                                    <a class="btn btn-light" href="tel:0552607444"><i class="bi bi-telephone"></i>
+                                        Call</a>
+                                </div>
+                                <p style="text-align: justify;"> Working hours from 8:00 AM to 6:00 PM.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3" style="max-width: 90%; margin: auto;">
+                    <div class="row">
+                        <div class="col-2 align-self-center">
+                            <img class="img-fluid charitylogo" src="images/Albir.png" alt="Albir Logo">
+                        </div>
+                        <div class="col-10">
+                            <div class="card-body">
+                                <h2 class="card-title">Albir</h2>
+                                <div style="float: right; margin-left: 10px;">
+
+                                    <button type="button" class="btn" onclick="location.href= '/donate'">Donate</button>
+                                    <br>
+                                    <a class="btn btn-light" href="tel:0552607444"><i class="bi bi-telephone"></i>
+                                        Call</a>
+                                </div>
+                                <p style="text-align: justify;"> Opening hours: Sun-Thur 8:30AM - 10PM,
+                                    Fri 3-10PM, and Sat 9AM-10PM.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3" style="max-width: 90%; margin: auto;">
+                    <div class="row">
+                        <div class="col-2 align-self-center">
+                            <img class="img-fluid charitylogo" src="images/Nemah.png" alt="Nemah Logo">
+                        </div>
+                        <div class="col-10">
+                            <div class="card-body">
+                                <h2 class="card-title">Nemah</h2>
+                                <div style="float: right; margin-left: 10px;">
+                                    <button type="button" class="btn" onclick="location.href= '/donate'">Donate</button>
+                                    <br>
+                                    <a class="btn btn-light" href="tel:0552607444"><i class="bi bi-telephone"></i>
+                                        Call</a>
+                                </div>
+                                <p style="text-align: justify;"> </p> Making a difference in Riyadh since 2020.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3" style="max-width: 90%; margin: auto;">
+                    <div class="row">
+                        <div class="col-2 align-self-center">
+                            <img class="img-fluid charitylogo" src="images/ekram.png" alt="Nemah Logo">
+                        </div>
+                        <div class="col-10">
+                            <div class="card-body">
+                                <h2 class="card-title">Ekram</h2>
+                                <div style="float: right; margin-left: 10px;">
+                                    <button type="button" class="btn" onclick="location.href= '/donate'">Donate</button>
+                                    <br>
+                                    <a class="btn btn-light" href="tel:0552607444"><i class="bi bi-telephone"></i>
+                                        Call</a>
+                                </div>
+                                <p style="text-align: justify;"> </p> First established in Makkah now available in
+                                Riyadh.
+                                We accept donations all week from 8:00AM - 6:00PM.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <%- include("./partials/footer.ejs")%>
+</body>
+
+</html>

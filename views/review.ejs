@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%-include("./partials/head.ejs")%>
+        <script type="text/javascript"
+            src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=rs-p-sUg5qpTxrVu2tQkEfUo0yIrWQ5wSqtJgfvpFFPoetyqYjmsQGFOg_K9vY_Xi5tekA3JHAuNnsTojLpnKlposrE2fFeE3e1bKFfr51Fp9MNRUA5iK7kDkweac65GeGMx-g2KwBxkZ-Rz4rvSvs_uthktNLGDxpcYgzHCuRhWdRbo2TgFd4ZTNa4aa91O5KA3H0PIRg-8O-v1pxB0rKEgPJq6ac_JYDVCbkGvwY6-4TmJgYSra63VsUPFkFkpR_e1QXdc7JgsKoadXy-L7mC_As5_ea1WHHoU7hevNemHUvTSrisOGYHE4LIy3tAm4Hpg0Jp8JwZyw85dz9jnW8Wp6ADybRDyIRYEdw_CeKsIIatBLxX6H-wSc_8hKKIqWLEDKrcEeG-0bzWaEP2SixXTS8WFpPYtDQiqsU9YM6AFBynGcUwIHC1VXLRMpfdvoEydkQSNyrW6kemgoJg9OtZZHa7oJ7TrOl3Z15fg_gXawhW-2c_qcSA-0KsSmkOp-LDWuC_GrFO1dd7oUFrsGkNE0RsEHFGzQ-vlRfeXHeru8HCurtGLy4vFCo2ZudAY3NqLhN3y7XIRL17A_unCW7Y4F4hK-QPQeyMHZzLgj-mI-e_Al4WUEbbAqzHSzLhZ-1GXbJNCxGGd-6K7pTFzqStk-T5iBL3mN2Z73IPYep4D-GtpHv8wepsosfJUK8YapFAtc4Gh8GqhJhTXPK18IMIbAYjkk1rTgCbqd8HBbANbZR87ZFBvZ_9SqWgQSFMBiqda1YvalOAVnex9kV2bXGm3scgrnXkhk_tWTIKqnB8_xFoablDF2JrZZbm6Ag0uM-Re0vrDZ3wpG9Bf2TkhRhGVRBhd6djuPjvKIoHZXRwi2pSghhpfq1mpoptpNM9Ik7fnoTGeg9h4PGLxRots-Il4pQSPMRaaovPaHm0wi-NJSLcT2VL-Jmc3_fJNXTt8EDcr30scHOmbijpbqHheuDer0Y9qKoyBbwgVrVi3rOKKdhe5wJMnZjZ0JaQ8p2dSOjJki5ufLLxKhz8q0vEpLFXPJze1mnQ6wBBZlNwyFVQALUvVlNKg1uFYDtMuxlE6rJbH4Ppo2kstzgcl57qphjYUzFMqaSqEtJ73RdulcrwqMkW8jy63MUfR647klRazjDvqUluuaJSDi9SflGSwX6weUtyCHc8VBVRPmhn60Dxi5OsR6sqThkN6hqDv9iGjv2MPiaA5qF3UvOFbQt3JbYStpS5Fjl7437XQnEYDb3-jcqf1Zk3dTG5lhoxY1z5HSkFwJZBeH8txWSo-YW0YHAm1QAAG6N23Ro8qIpcv1dSVw7Y0yaRxVYVIjjzyd0dBIowSE5UM00458e8Wt8NTAFpUnNLhD0qTxid5j98eCL2_i-U-WhVvQi_6O-RaKhId9EB_xvTs8i54sFWtJHZ7irxtfZQpPtm9q-eOdtyGcRXzcrKpFBra4V7YCCi20v0ljbhZtJItg4YdQ1LpLL9tysc0PgDLh-pPTIAOPWwNRYbAV25VQ9o_qFDFJ9qiowXjko0xQhagaDQdnQ8y2CrNq2bN5no3lqOHG0Kvkv34yWsV3W3bEPsicMG9D5v_0QFQsgh6nzgD3CWIeRi11qO6TulYMP8svbpsGhDZn6kvDiVOs5dta8Xv78dfMVm3wgBCSCFmJF2r1KiOiFXpC5Eff9CHrWJ4WwNnc5YqVbvuaFU"
+            charset="UTF-8"></script>
+        <link rel="stylesheet" crossorigin="anonymous"
+            href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9kb2MtMTAtYmstZG9jcy5nb29nbGV1c2VyY29udGVudC5jb20vZG9jcy9zZWN1cmVzYy9xaDJjZHM3YW01a3Vxc2wyMDNiMWZsNTkwNWdpMGtjaS9ubW80ZnU5cmw0MTFhNDI0NjBsaTJvcWNmMDBqcnM0cC8xNjgzNTY5NDAwMDAwLzEyMTIzMTMwNjU5NzEwNzgwNjYxLzEwMjEyODgzMzEwNjUxNjYzNzU1LzFHdDhxMURfd1RVVUFSZlhrMUViSlhVdzhoM0dLRzZHSj9lPWRvd25sb2FkJmF4PUFEV0NQS0R2WHAzU0pvaHBlS000UzE1bnpEbG9HSzNDeFlzY1R1ZzVLTUpyZExVYVJlWGh2am1mMWJZaHlBQ0l6UDg2OTFwWlB4NEpfeEY3WmFFd1pYYldScE1qRVZxMTFGbFlhbEV2SjI1SmFmbHhTRW56MEhCeFd0TDBMZHdSSmF5VVJmdjA0akZ0VTFablVzRF9xOWI0SGUxcmJ2WWxqUFl6VHpMaHRFRGRhTk1JekxnUlQyanEtNTk1bHk1bE1TOEQ3eXlZR2xrbmtHMlVLQXBnUVFtSHZPcUhuSUdhRWpGY2dwM3lkT3Ffb0FucUl0eGcycURKWHMtM3o2THJ1MkZNMXpnbnUwQTdvYm1VTXZBWmNhUXdvR0MyNi15a3liN1hUeXdETHE4SGlvTWdvQzRuNVcwZ0FKdHhMN1lIOEthakMyZ0xrWVIxZVkzQjhLVTRMZXBoT0pGQ1h2bGFYeU8yOHdleldBWE1tUjFlby1yTVloUGN1MjIxY0d3alVnMTlsdVdYczZtb3FjOHVjTElQaFZnZjNWeUxnRkhwR3NOblVJR1NCSVB2OFVtZVdrVEc4VE1xdFRaMjRqaUtKXzNwb090MExMWHJ3NDYyWC1zRU41TV9vTWRVVEw4RnRzY0J1TEpndXlKVDF1UGRaOE1YeUswS21OMFhDRG9JbncySWJTb2xLR2RzS2dYS2pYY3U1TVZnSTk4U251VmNYZHhkeHl0VzNRdWNDMmRqNHdpMWFmMWxjd2NrOHJvbGQtanA4MUtiVktmT0k0QzNrZzFwTTZFVEdvY1pQaENxZHotc0NobV9RUXhJVHVOVDNwQk81U0RlVWlLdUdWUFZxUU5BaGQ3Y1M0cS1NSHYxLWVnRF8zSFNCdlExNkNCczRpWnhGVmFSWU5HWVpmSHd3UEo2bFpJdHhtM2tlM1hzcEpISHJQQXVTcG1kXzhpcUoxeG8yY0g3dTAyVVp2b2I0ZWpsZUJZWnNHcnBHakxuVG03dHZCcGx2cDFtek05Qk1sVkdhbkxlVTU4YUt1TU1LdjhfdG8zSTRzano1blBlVlR3Yjh3ZUEwSG9pTWpjdDYtbHJLaF9FVElScWFnb2RIOVJGbzRyelkxVE56emhEb2c1eEVvZ3l3dHhMQ2hBTTg0T3ktRGhSSnZKRU5QdTZIdDRJaFBPYzRWNkE4MTlLMjNmcTVjbGdobVZvZXZqeW55TmNsdHNFWUZjOEJlczQybEdsbFZkMUFFZmItV0s4ejZxMW1QaGJ0YXlpWFJMdWNHNFNlSXg2NEI4STl3JnV1aWQ9M2ZkMjg3N2EtN2QzMS00NTE5LTgzZTYtYTg1MGI5NzBjN2YxJmF1dGh1c2VyPTA" />
+        <%-include("./partials/head.ejs")%>
+            
+            <link rel="stylesheet" href="CSS/reviews.css">
+            <link rel="stylesheet" href="CSS/card.css">
+
+</head>
+
+<body>
+    <%-include("./partials/nav.ejs")%>
+        <div class="card">
+            <h1 class="card-title">Charity Reviews</h1>
+            <hr>
+            
+            <p>Want to share your thoughts on a charity? <a href="reviewform">Add a review</a> </p>
+
+            <div class="review-cards">
+            <% reviews.forEach(function (review) { %>
+            <div class="card">
+                <h2 class="card-title charityname" style="font-size: 20px;"><%= review.selectedCharity %></h2>
+                 <p class="card-body"><%= review.message %></p>
+                 <a onClick="deleteReview('<%= review._id %>')" class="deletebtn" href="javascript:;"
+                    >Delete Review </a>
+             </div>
+                
+            <% }) %>
+        </div>
+        </div>
+<script>
+    function deleteReview(id) {
+ if(confirm('Are you sure want to delete review?')) {
+     window.location = "/review/delete/"+id;  
+ }
+}
+</script>
+    <%- include("./partials/footer.ejs")%>
+</body>
+
+</html>

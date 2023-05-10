@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%-include("./partials/head.ejs")%>
+    <link rel="stylesheet" href="CSS/home.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+        <header>
+            <nav class="navbar navbar-expand-md" id="khairNav">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                  <img src="images/logo.png" alt="logo" style="height:75px; width: 150px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#khairNav">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="khairNav">
+                  <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Us</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="signuplink" class="sign-up-btn nav-link" href="/signup">Sign Up</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+                    
+        <main class="container-fluid p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h1>Why Khair?</h1>
+                        <hr><br>
+
+                        <ul>
+                            <li> <i> Khair</i> is a website that allows users to donate leftover food for charities to
+                                receive and
+                                distribute later to people in need.
+                            </li>
+                            <br>
+                            <li> <i> Khair</i> raises awareness and educates people in the practice of healthy and
+                                professional food
+                                preservation and distribution to lead to a more compassionate, cooperative, and
+                                civilized
+                                society.
+                            </li>
+                        </ul>
+                        <br>
+                        <button type="button" class="donatebutton" onclick="location.href= '/login'">Donate
+                            Now</button>
+                        <a href="/login" id="charitiesbutton">View Charites</a>
+                    </div>
+                    <!-- Carousel -->
+                    <div class="col-md-8">
+                        <div id="gallery" class="carousel slide" data-bs-ride="carousel">
+
+                            <!-- Indicators/dots -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#gallery" data-bs-slide-to="0"
+                                    class="active"></button>
+                                <button type="button" data-bs-target="#gallery" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#gallery" data-bs-slide-to="2"></button>
+                            </div>
+                            <!-- The slideshow/carousel -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/GivePic1.webp" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/GivePic2.webp" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/GivePic3.webp" class="d-block w-100">
+                                </div>
+                            </div>
+                            <!-- Left and right controls/icons -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#gallery"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#gallery"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="vision" style="margin-top: 10px;">
+                    <div class="col-md-4">
+                        <h2>VISION</h2>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p>To specialize in collecting surplus foods for high quality distribution and investment. In
+                            addition,
+                            it raises awareness and educates people in the practice of healthy and professional food
+                            preservation and distribution. Hoping it may lead to a more compassionate, cooperative and
+                            civilized
+                            society.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div id="history" class="carousel slide" data-bs-ride="carousel">
+
+                            <!-- Indicators/dots -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#history" data-bs-slide-to="0"
+                                    class="active"></button>
+                                <button type="button" data-bs-target="#history" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#history" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#history" data-bs-slide-to="3"></button>
+                            </div>
+                            <!-- The slideshow/carousel -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/charitybox.jpg" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/historyPic1.webp" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/historyPic3.webp" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/historyPic4.webp" class="d-block w-100">
+                                </div>
+                            </div>
+                            <!-- Left and right controls/icons -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#history"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#history"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-4" id="ourhistory">
+                        <h2 id="historyheader">OUR HISTORY</h2>
+                        <p>Established in 2021,<i> Khair</i> is a continuously growing community with more charities
+                            joining in the Riyadh region. Its founders, Sarah AlGadi, Sarh AlSaleem, and Reema AlBattah
+                            are
+                            aiming to expand it further to offer complete services to help people in need.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </main>
+        <%- include("./partials/footer.ejs")%>
+</body>
+
+</html>

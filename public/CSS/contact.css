@@ -1,0 +1,46 @@
+/*css rules relevant to contact page*/
+
+div h1 {
+  font-size: 48px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #171B1B;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-top: 40px;
+}
+
+#divider {
+  width: 60%;
+  margin-left: 20px;
+}
+
+div h2 {
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  color: #171B1B;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#submitbtn {
+  background-color: #79915C;
+  color: white;
+  font-weight: semi-bold;
+  float: right;
+  margin-top: 25px;
+}
+
+form input:focus,
+textarea:focus {
+  border: 2px solid #79915C;
+}
+
+input[type=text], input[type=text]:focus{
+  background-color: white;
+  border: 1px solid rgb(228, 228, 228);
+}
+form label{
+  font-weight: normal;
+  font-family: 'Lato', sans-serif;
+}

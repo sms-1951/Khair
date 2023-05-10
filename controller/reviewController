@@ -1,0 +1,38 @@
+const Review = require('../model/review');
+
+const { validationResult } = require('express-validator');
+
+const deleteReview = async (request, response) =>{
+  let session = request.session.user;
+  if(session.role == "administrator"){
+  let id = request.params.id;
+  await Review.findByIdAndDelete(id);
+  return response.redirect("/review")
+}else{
+  return response.redirect("/accessDenied")
+}
+}
+const addReview = (request, response) => {
+    let selectedCharity1 = request.body.selectedCharity;
+    let message1 = request.body.message;
+
+
+    const errors = validationResult(request);
+    if (!errors.isEmpty()) {
+        return response.status(422).json({ errors: errors.array() });
+    }
+
+    const review = new Review({ selectedCharity: selectedCharity1, message: message1});
+    review.save()
+        .then((data) => {
+            console.log(`Review saved to database: id -> ${data._id}`);
+            response.redirect('review');
+        })
+        .catch((err) => { console.log(err) });
+};
+
+
+module.exports = {
+    addReview: addReview,
+    deleteReview: deleteReview
+  };

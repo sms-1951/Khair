@@ -1,0 +1,161 @@
+
+#itemsDetails h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+#selectCharity{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.item-container {
+    padding: 20px;
+}
+
+
+.item-container h2 {
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 1rem;
+}
+
+.pic-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#picButton {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+#picButton i {
+    margin-right: 6px;
+}
+
+div hr {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+
+#next {
+    float: right;
+}
+
+.nxtbtn {
+    font-family: 'Lato', sans-serif;
+    background: transparent;
+    border: none;
+    margin: 30px auto 0;
+    margin-right: 20px;
+    display: block;
+    font-size: 18px;
+    outline: none;
+    position: relative;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+.nxtbtn::before {
+    content: '';
+    border-bottom: 1px solid #171B1B;
+    padding: 0 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    transition: 0.3s;
+}
+
+.nxtbtn:hover:before {
+    width: 100%;
+    padding: 0;
+
+}
+
+.nxtbtn:active {
+    background: #171B1B;
+    color: white;
+    transition: none;
+}
+  #deliveryDetails{
+    margin-left: 20px;
+    margin-top: -50px;
+  }
+  #deliveryPreference label{
+    margin-right: 40px;
+    margin-bottom: 10px;
+  }
+  
+input[type="date"], input[type="time"]{
+    background-color: white;
+    width: 170px;
+    margin-left: 5px;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    color: #171B1B;
+    font-size: 13px;
+    border: 2px solid #D9EAD3;
+    outline-color: #79915C;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+::-webkit-calendar-picker-indicator{
+    background-color: white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+input[type="text"], #charitylist{
+    background-color: white;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    color: #171B1B;
+    font-size: 14px;
+    border: 2px solid #D9EAD3;
+    outline-color: #79915C;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 60%;
+    margin-left: 5px;
+}
+#charitylist{
+float: right;
+}
+
+.google-maps {
+    padding-bottom: 50%;
+    position: relative;
+}
+.google-maps iframe {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 5px;
+}
+#pickupsubmitbtn {
+    background-color: #79915C;
+    color: white;
+    font-weight: semi-bold;
+    margin-top: 25px;
+  }
+#checkIcon{
+    color: #79915C;
+  }
+#orderSuccess, #changeSuccess{
+text-align: center;
+padding: 20px;
+margin-top: -60px;
+}
+#orderSuccess h2, #changeSuccess h2{
+    color: #79915C;
+}
+#orderSuccess p{
+    color: #171B1B;
+}
+#orderSuccess p a{
+    color: #79915C;
+}

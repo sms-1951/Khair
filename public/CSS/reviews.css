@@ -1,0 +1,50 @@
+.review-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+  }
+  
+  .card-body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .deletebtn{
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background-color: #79915C;
+    border-radius: 1rem;
+    border: none;
+    padding: 5px;
+  }
+p{
+  text-align: center;
+}
+p a{
+  text-align: center;
+  color: #79915C;
+  font-weight: bold;
+}
+
+.charityname{
+  text-transform: uppercase;
+}
+.card-body{
+  text-align: justify;
+}

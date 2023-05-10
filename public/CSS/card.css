@@ -1,0 +1,25 @@
+.card {
+    height: 100vh;
+    display: flex;
+    width: 60%;
+    height: 85%;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px #D9EAD3;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.card-body{
+    max-height: 600px;;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #171B1B;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-top: 40px;
+}

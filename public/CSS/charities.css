@@ -1,0 +1,33 @@
+/*css rules relevant to charities page*/
+/*Container holding the image and the text*/
+#imageContainer {
+  position: relative;
+  text-align: center;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 30px;
+  color: white;
+}
+
+#charity-content {
+  padding-bottom: 10px;
+}
+#charitycards button {
+  background-color: #79915C;
+  color: white; 
+  display: flex;
+}
+.charitylogo{
+  height: 200px;
+  width: 400px;
+  object-fit: contain;
+}
+.card:hover{
+  background-color: #D9EAD3;
+  transform: scale(1.025);
+  transition: .2s ease-in-out;
+}

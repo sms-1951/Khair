@@ -1,0 +1,48 @@
+/* general rules that apply to all pages like footer and nav*/
+footer {
+    
+    background-color: #D9EAD3;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding: 3rem;
+    margin-top: 10rem;;
+  }
+  
+  #khairNav ul li a{
+    font-family: 'Lato', sans-serif;
+    color: #79915C;
+    margin: 10px;
+  }
+  
+  #khairNav ul li a:hover{
+    background-color: #D9EAD3;
+    border-radius: 5%;
+  }
+  
+  li {
+    text-align: justify;
+    font-family: 'Lato', sans-serif;
+  }
+  #khairNav ul li #signuplink{
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+    margin: 10px;
+    border-radius: 5%;
+  }
+  #khairNav ul li #signuplink:hover{
+    font-family: 'Lato', sans-serif;
+    color: #79915C;
+    margin: 10px;
+    border-radius: 5%;
+  }
+  #logoutbtn{
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+    background-color: #79915C;
+    margin: 10px;
+    border: #79915C;
+    margin-top: 12px;
+    padding: 4px;
+    width: 5rem;
+    border-radius: 5%;
+  }

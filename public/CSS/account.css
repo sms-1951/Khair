@@ -1,0 +1,66 @@
+h1 {
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #171B1B;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-top: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-left: 20px;
+    font-family: 'Lato', sans-serif;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+hr {
+    width: 60%;
+    margin-left: 20px
+}
+#rateButton{
+    color: #79915C;
+    border: 1px solid #79915C;
+}
+.fa-solid{
+    color: #41511f;
+}
+#rateButton:hover{
+    border: 1px solid #79915C;
+    background-color:  #79915C;
+    color: white;
+}
+
+.history {
+    border: 1px solid #79915C;
+    margin: 1rem;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    color: #79915C;
+    font-weight: 600;
+}
+
+.rate-button {
+    padding: 1rem 1rem;
+    float: right;
+}
+
+.container{
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+#savechangebtn{
+    font-family: 'Lato', sans-serif;
+    color: white;
+    background-color: #79915C;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}

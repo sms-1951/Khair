@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%-include("./partials/head.ejs")%>
+        <link rel="stylesheet" href="CSS/card.css">
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <%-include("./partials/nav.ejs")%>
+        <div class="card" id="err">
+            <div>
+                <img src="images/404error.jpg" class="img-fluid mx-auto d-block" alt="Picture of a 404 error"
+                    style="margin-top: 20px;  opacity: 0.85;">
+                <div>
+                    <h1
+                        style="font-family: 'Lato', sans-serif; font-weight: bold; font-size: 36px; text-align: center;">
+                        Access Denied</h1>
+                </div>
+                <hr style="width: 60%; margin: auto; margin-top: 2rem;">
+                <p style="text-align: center; margin-top: 2rem;">Sorry, only administrators can delete reviews.</p>
+                <p style="text-align: center;">Keep reading <a href="/review" style="color: #79915C">reviews</a></p>
+            </div>
+        </div>
+        <%- include("./partials/footer.ejs")%>
+</body>
+
+</html>
